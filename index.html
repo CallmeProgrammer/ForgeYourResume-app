@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Forge Your Resume</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/builder.css">
+
+    <link rel="stylesheet" href="css/templates.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body data-theme="dark">
+
+    <!-- ========================= -->
+    <!-- TEMPLATE SELECTION -->
+    <!-- ========================= -->
+
+    <section id="templateSelection" class="template-selection">
+
+        <h1>
+
+            Choose Your Resume Design
+
+        </h1>
+
+        <div class="template-grid">
+
+            <!-- MODERN -->
+
+            <!-- <div class="template-card" data-template="modern">
+
+                <img src="assets/templates/template1.png">
+
+                <h3>
+
+                    Modern Professional
+
+                </h3>
+
+                <button>
+
+                    Select
+
+                </button>
+
+            </div> -->
+
+            <!-- MINIMAL -->
+
+            <!-- <div class="template-card" data-template="minimal">
+
+                <img src="assets/templates/template2.png">
+
+                <h3>
+
+                    ATS Minimal
+
+                </h3>
+
+                <button>
+
+                    Select
+
+                </button>
+
+            </div> -->
+
+            <!-- ACADEMIC -->
+
+            <div class="template-card" data-template="academic">
+
+                <img src="assets/templates/template3.png">
+
+                <h3>
+
+                    Academic ATS
+
+                </h3>
+
+                <button>
+
+                    Select
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- BUILDER -->
+    <!-- ========================= -->
+
+    <section id="builderPage" class="hidden">
+
+        <!-- ========================= -->
+        <!-- SIDEBAR -->
+        <!-- ========================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                ResumeForge 
+
+            </div>
+
+            <div class="sidebar-buttons">
+
+                <button id="themeToggle">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                    Toggle Theme
+
+                </button>
+
+                <button id="a4Btn">
+
+                    <i class="fa-solid fa-file"></i>
+
+                    A4 Size
+
+                </button>
+
+                <button id="legalBtn">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    Legal Size
+
+                </button>
+
+                <button id="downloadPdf">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download PDF
+
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- ========================= -->
+        <!-- FORM PANEL -->
+        <!-- ========================= -->
+
+        <main class="form-panel">
+
+            <!-- SECTION MANAGER -->
+
+            <div class="section-manager">
+
+                <h3>
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Arrange Sections
+
+                </h3>
+
+                <div id="sectionManagerList"></div>
+
+            </div>
+
+            <!-- PERSONAL INFO -->
+
+            <h2>
+
+                Personal Information
+
+            </h2>
+
+            <div class="form-grid">
+
+                <input type="text" id="fullName" placeholder="Full Name">
+
+                <input type="text" id="role" placeholder="Role">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="number" id="phone" placeholder="Phone">
+
+                <textarea id="summary" placeholder="Professional Summary"></textarea>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- MODERN SKILLS -->
+            <!-- ========================= -->
+
+            <div id="normalSkillsSection" class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    Skills
+
+                </h3>
+
+                <div id="skillsContainer"></div>
+
+                <button id="addSkill" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Skill
+
+                </button>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- ACADEMIC SKILLS -->
+            <!-- ========================= -->
+
+            <div id="academicSkillsSection" class="section-block hidden">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    Technical Skills
+
+                </h3>
+
+                <div id="academicSkillsContainer"></div>
+
+                <button id="addAcademicSkill" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Technical Skill
+
+                </button>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- EXPERIENCE -->
+            <!-- ========================= -->
+
+            <div id="experienceSection" class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    Experience
+
+                </h3>
+
+                <div id="experienceContainer"></div>
+
+                <button id="addExperience" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Experience
+
+                </button>
+
+            </div>
+
+            <!-- EDUCATION -->
+
+            <div class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    Education
+
+                </h3>
+
+                <div id="educationContainer"></div>
+
+                <button id="addEducation" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Education
+
+                </button>
+
+            </div>
+
+            <!-- ========================= -->
+            <!-- PROJECTS -->
+            <!-- ========================= -->
+
+            <div id="projectsSection" class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    Projects
+
+                </h3>
+
+                <div id="projectsContainer"></div>
+
+                <button id="addProject" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Project
+
+                </button>
+
+            </div>
+
+            <!-- CERTIFICATIONS -->
+
+            <div class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    Certifications
+
+                </h3>
+
+                <div id="certificationsContainer"></div>
+
+                <button id="addCertification" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Certification
+
+                </button>
+
+            </div>
+
+            <!-- HOBBIES -->
+
+            <div class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Hobbies
+
+                </h3>
+
+                <div id="hobbiesContainer"></div>
+
+                <button id="addHobby" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Hobby
+
+                </button>
+
+            </div>
+
+            <!-- CUSTOM SECTION -->
+
+            <div class="section-block">
+
+                <h3 class="section-title">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Custom Sections
+
+                </h3>
+
+                <div id="customSectionsContainer"></div>
+
+                <button id="addCustomSection" class="add-btn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Custom Section
+
+                </button>
+
+            </div>
+
+        </main>
+
+        <!-- ========================= -->
+        <!-- PREVIEW PANEL -->
+        <!-- ========================= -->
+
+        <section class="preview-panel">
+
+            <div id="resumePreview" class="resume-page a4">
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <!-- PDF -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="js/state.js"></script>
+
+    <script src="js/renderer.js"></script>
+
+    <script src="js/templates.js"></script>
+
+    <script src="js/sections.js"></script>
+
+    <script src="js/utils.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,724 @@
+.template-selection {
+
+  min-height: 100vh;
+
+  padding: 60px;
+
+  background: #020617;
+}
+
+.template-selection h1 {
+
+  font-size: 48px;
+
+  margin-bottom: 50px;
+
+  font-weight: 800;
+}
+
+/* TEMPLATE GRID */
+
+.template-grid {
+
+  display: flex;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* TEMPLATE CARD */
+
+.template-card {
+
+  width: 300px;
+
+  background: #111827;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.template-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 10px 30px rgba(37,99,235,0.2);
+}
+
+/* TEMPLATE IMAGE */
+
+.template-card img {
+
+  width: 100%;
+
+  height: 420px;
+
+  object-fit: cover;
+}
+
+/* TEMPLATE CONTENT */
+
+.template-card h3 {
+
+  padding: 20px;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+.template-card button {
+
+  margin: 0 20px 20px;
+
+  width: calc(100% - 40px);
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.template-card button:hover {
+
+  background: #1d4ed8;
+}
+
+/* ========================= */
+/* MODERN TEMPLATE */
+/* ========================= */
+
+.modern-template {
+
+  padding: 50px;
+}
+
+/* HEADER */
+
+.modern-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+}
+
+.modern-header h1 {
+
+  font-size: 46px;
+
+  font-weight: 800;
+
+  margin-bottom: 10px;
+
+  color: #0f172a;
+}
+
+.modern-header h3 {
+
+  color: #2563eb;
+
+  font-size: 24px;
+
+  font-weight: 600;
+}
+
+/* CONTACT */
+
+.modern-contact {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+  margin-top: 24px;
+}
+
+.modern-contact span {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+/* PROFILE IMAGE */
+
+.profile-image {
+
+  width: 110px;
+
+  height: 110px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  border: 4px solid #2563eb;
+
+  flex-shrink: 0;
+}
+
+.profile-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* SECTION */
+
+.resume-section {
+
+  margin-top: 42px;
+}
+
+.resume-section h2 {
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+
+  border-bottom: 2px solid #2563eb;
+
+  padding-bottom: 10px;
+
+  color: #0f172a;
+}
+
+.resume-section p {
+
+  color: #334155;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+/* ========================= */
+/* DOT SKILLS */
+/* ========================= */
+
+.skills-list {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 20px 40px;
+
+  margin-top: 24px;
+
+  width: 100%;
+}
+
+.dot-skill {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 18px;
+
+  min-width: 0;
+}
+
+.dot-skill-name {
+
+  flex: 1;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.dot-level {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.dot {
+
+  width: 10px;
+
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #cbd5e1;
+}
+
+.dot.filled {
+
+  background: #2563eb;
+}
+
+/* ========================= */
+/* MINIMAL TEMPLATE */
+/* ========================= */
+
+.minimal-template {
+
+  padding: 55px;
+}
+
+.minimal-template h1 {
+
+  text-align: center;
+
+  font-size: 42px;
+
+  margin-bottom: 12px;
+
+  color: #0f172a;
+}
+
+.minimal-template p {
+
+  line-height: 1.8;
+
+  color: #475569;
+}
+
+.minimal-template h2 {
+
+  margin-top: 30px;
+
+  margin-bottom: 14px;
+
+  color: #0f172a;
+}
+
+.minimal-template hr {
+
+  margin: 30px 0;
+
+  border: none;
+
+  border-top: 1px solid #cbd5e1;
+}
+
+/* ========================= */
+/* ACADEMIC TEMPLATE */
+/* ========================= */
+
+.academic-template {
+
+  padding: 50px;
+
+  font-family: Georgia, serif;
+
+  color: #111;
+
+  line-height: 1.4;
+}
+
+/* HEADER */
+
+.academic-header {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.academic-header h1 {
+
+  font-size: 25px;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+}
+
+.academic-contact {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  font-size: 15px;
+}
+
+/* SECTION */
+
+.academic-section {
+
+  margin-top: 20px;
+}
+
+.academic-section h2 {
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #111;
+
+  margin-bottom: 14px;
+
+  padding-bottom: 4px;
+}
+
+.academic-section p {
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* SKILLS */
+
+.academic-skills {
+
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.academic-skills li {
+  line-height: 1.0;
+  margin: 0;
+  padding: 0;
+}
+/* ========================= */
+/* EDUCATION */
+/* ========================= */
+
+.education-item {
+
+  margin-bottom: 22px;
+}
+
+.education-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.education-top h3 {
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  margin-bottom: 4px;
+}
+
+.education-top p {
+
+  line-height: 1.5;
+}
+
+.education-right {
+
+  text-align: right;
+
+  flex-shrink: 0;
+}
+/* ========================= */
+/* EDUCATION FORM */
+/* ========================= */
+
+.education-form {
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  margin-bottom: 24px;
+}
+
+.education-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.education-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2,1fr);
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+}
+
+.remove-edu-btn {
+
+  width: 44px;
+
+  height: 44px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: rgba(239,68,68,0.12);
+
+  color: #ef4444;
+
+  cursor: pointer;
+}
+/* ========================= */
+/* ACADEMIC EXPERIENCE */
+/* ========================= */
+
+.academic-exp {
+
+  margin-top: 5px;
+
+  padding-bottom: 15px;
+}
+
+.academic-exp-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 10px;
+}
+
+.academic-exp-top strong {
+
+  font-size: 15px;
+}
+
+.academic-exp-right {
+
+  text-align: right;
+
+  font-size: 14px;
+
+  color: #444;
+}
+
+/* ========================= */
+/* EXPERIENCE BULLETS */
+/* ========================= */
+
+.experience-points {
+
+  margin-top: 6px;
+
+  padding-left: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.experience-points li {
+
+  line-height: 1.0;
+}
+/* ========================= */
+/* ATS PROJECT STYLE */
+/* ========================= */
+
+.project-item,
+.academic-project {
+
+  margin-top: 18px;
+
+  margin-bottom: 24px;
+}
+
+/* PROJECT HEADING */
+
+.project-heading {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: baseline;
+
+  gap: 6px;
+
+  margin-bottom: 6px;
+
+  line-height: 1.5;
+}
+
+/* PROJECT TITLE */
+
+.project-title-link,
+.project-title-text {
+
+  font-weight: 700;
+
+  font-size: 15px;
+
+  color: inherit;
+
+  text-decoration: none;
+}
+
+/* HOVER */
+
+.project-title-link:hover {
+
+  color: #2563eb;
+}
+
+/* DIVIDER */
+
+.project-divider {
+
+  font-weight: 600;
+}
+
+/* TECH STACK */
+
+.project-tech-inline {
+
+  color: #64748b;
+
+  font-style: italic;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+/* BULLETS */
+
+.project-points {
+
+ 
+
+  padding-left: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.project-points li {
+
+  line-height: 1.0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================= */
+/* SIMPLE LIST */
+/* ========================= */
+
+.simple-list,
+
+.custom-points,
+
+.project-points,
+
+.experience-points {
+
+  margin-top: 8px;
+
+  margin-left: 0;
+
+  padding-left: 22px;
+}
+
+/* LIST ITEMS */
+
+.simple-list li,
+
+.custom-points li,
+
+.project-points li,
+
+.experience-points li {
+
+  margin-bottom: 4px;
+
+  line-height: 1.5;
+}
